@@ -19,19 +19,19 @@ The query preparation step creates the (optimized) SPARQL 1.1 queries for the qu
 The script can be run using Python. Note that the ARQ CLI must be installed to run the script.
 
 Create a SPARQL 1.1 under set semantics query from a decomposition: 
-```python
+```bash
  python3 prepare_query.py -d decompositions/type1/CD1_decomp.txt -q quality_descriptions/1_qm/description_qm_1_v_1.json
 ``` 
 
 Create a SPARQL 1.1 under utility-aware semantics query from a decomposition: 
-```python
+```bash
  python3 prepare_query.py -o -d decompositions/type1/CD1_decomp.txt -q quality_descriptions/1_qm/description_qm_1_v_1.json
 ``` 
 
 The option `-v` can be used to obtain more metadata about the query.
 
 Get Help:
-```python
+```bash
 python3 prepare_query.py --help
 ```
 
@@ -45,11 +45,11 @@ It writes the results to a CSV File and also stores statistics about the executi
 The script can be run using Python. Note that the ARQ CLI must be installed to run the script.
 
 Execute a query:
-```python
+```bash
 python3 execute_query.py -q queries/examples/example_query.rq -a ~/apache-jena-3.6.0/bin/arq
 ``` 
 
 Get Help:
-```python
+```bash
 python3 execute_query.py --help
 ``` 
