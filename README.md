@@ -8,7 +8,7 @@ Furthermore, the quality descriptions as well as the resulting queries from the 
 
 The scripts are written in Python 3.
 The scripts require the packages `numpy` and `pandas`.
-Furthermore, as the queries are executed using the ARQ CLI, the binary must be available as well and set correctly when running the `execute_query.py` script.
+Furthermore, as the queries are executed using the [ARQ CLI](https://jena.apache.org/documentation/query/cmds.html) , the binary must be available as well and set correctly when running the `execute_query.py` script.
 
 ## Prepare Queries
 
@@ -16,7 +16,7 @@ The query preparation step creates the (optimized) SPARQL 1.1 queries for the qu
 
 ### Example Usage
 
-The script can be run using Python. Note that the ARQ CLI must be installed to run the script.
+The script can be run using Python. Note that the [ARQ CLI](https://jena.apache.org/documentation/query/cmds.html) must be installed to run the script.
 
 Create a SPARQL 1.1 under set semantics query from a decomposition: 
 ```bash
